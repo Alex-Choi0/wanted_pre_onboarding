@@ -1,3 +1,4 @@
+import { UsersRecruitJoin } from "src/users/entities/user-recruit-join.entity";
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { Company } from "./company.entity";
 
@@ -26,4 +27,7 @@ export class RecruitInfo {
 
     @ManyToOne(type => Company, company => company.id)
     company : Company
+
+    @OneToMany(type => UsersRecruitJoin, (recruitJoin) => recruitJoin.recruitId)
+    recruitJoin : UsersRecruitJoin;
 }
