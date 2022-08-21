@@ -20,11 +20,10 @@ async function bootstrap() {
   );
 
   const options = new DocumentBuilder()
-    .setTitle('Playin_RPG_SoketIO')
+    .setTitle('프리온보딩 백엔드 코스 4차 선발과제 API문서')
     .setVersion('1.0')
     .addTag(
-      '소켓IO테스트를 위한 서버',
-      '간단한 소켓IO테스트 서버입니다. 향후 Playin_RPG의 데이터를 받을수 있는지 확인하기 위한 테스트 서버 입니다.',
+      '',
     )
     .addBearerAuth()
     .build();
