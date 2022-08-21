@@ -16,7 +16,7 @@ import { UsersModule } from './users/users.module';
         PG_PASSWORD: Joi.required(),
         PG_DATABASE: Joi.required(),
         PG_PORT: Joi.number().default(5432),
-        NESTJS_PORT: Joi.number().default(5031),
+        NESTJS_PORT: Joi.number().default(3500),
       }),
     }),
     TypeOrmModule.forRoot({

@@ -22,10 +22,11 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .setTitle('프리온보딩 백엔드 코스 4차 선발과제 API문서')
     .setVersion('1.0')
-    .addTag(
-      '',
-    )
-    .addBearerAuth()
+    .setDescription(`
+    Blog : https://engineeringshw.blogspot.com/
+    GitHub : https://github.com/Alex-Choi0
+    숏에세이 : https://blog.naver.com/unrealjason/222854114037
+    `)
     .build();
 
   // Swagger Document의 문서를 api(/api-docs)로 설정할수 있게 셋팅
